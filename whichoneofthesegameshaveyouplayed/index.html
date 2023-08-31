@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Which one of these games have you played? Poll - Polls - Warren Woodhouse</title>
+<script>
+function getVote(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+</head>
+<body>
+<div id="poll">
+<h3>Which one of these games have you played?</h3>
+<form>
+Assassin's Creed III: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+Destroy All Humans!: <input type="radio" name="vote" value="1" onclick="getVote(this.value)"><br>
+Micro Machines v3 (PS1): <input type="radio" name="vote" value="2" onclick="getVote(this.value)"><br>
+Crash Bandicoot: Cortex Strikes Back!: <input type="radio" name="vote" value="3" onclick="getVote(this.value)"><br>
+Pandemonium! (PS1): <input type="radio" name="vote" value="4" onclick="getVote(this.value)"><br>
+The Sims (PS2): <input type="radio" name="vote" value="5" onclick="getVote(this.value)"><br>
+Hitman: Codename 47 (PC): <input type="radio" name="vote" value="6" onclick="getVote(this.value)"><br>
+Dog's Life: <input type="radio" name="vote" value="7" onclick="getVote(this.value)"><br>
+The Godfather: The Video Game (PS2): <input type="radio" name="vote" value="8" onclick="getVote(this.value)"><br>
+Zone of the Enders (PS2): <input type="radio" name="vote" value="9" onclick="getVote(this.value)"><br>
+Thief (Remake): <input type="radio" name="vote" value="10" onclick="getVote(this.value)"><br>
+Dishonored: <input type="radio" name="vote" value="11" onclick="getVote(this.value)">
+</form>
+</div>
+</body>
+</html>
