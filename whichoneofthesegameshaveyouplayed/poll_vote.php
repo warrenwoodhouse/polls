@@ -7,8 +7,18 @@ $content = file($filename);
 
 //put content in array
 $array = explode("||", $content[0]);
-$yes = $array[0];
-$no = $array[1];
+$a = $array[0];
+$b = $array[1];
+$c = $array[2];
+$d = $array[3];
+$e = $array[4];
+$f = $array[5];
+$g = $array[6];
+$h = $array[7];
+$i = $array[8];
+$j = $array[9];
+$k = $array[10];
+$l = $array[11];
 
 if ($vote == 0) {
   $a = $a + 1;
@@ -70,9 +80,9 @@ fclose($fp);
 <tr>
 <td>Assassin’s Creed III:</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($a/($a+$a),0)); ?>'
+width='<?php echo(100*round($a/($a+$a),1)); ?>'
 height='20'>
-<?php echo(100*round($a/($a+$a),0)); ?>%
+<?php echo(100*round($a/($a+$a),1)); ?>%
 </td>
 </tr>
 <tr>
@@ -86,81 +96,81 @@ height='20'>
 <tr>
 <td>Micro Machines v3 (PS1):</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($c/($c+$c),2)); ?>'
+width='<?php echo(100*round($c/($c+$c),1)); ?>'
 height='20'>
-<?php echo(100*round($c/($c+$c),2)); ?>%
+<?php echo(100*round($c/($c+$c),1)); ?>%
 </td>
 </tr>
 <tr>
 <td>Crash Bandicoot: Cortex Strikes Back!:</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($d/($d+$d),3)); ?>'
+width='<?php echo(100*round($d/($d+$d),1)); ?>'
 height='20'>
-<?php echo(100*round($d/($d+$d),3)); ?>%
+<?php echo(100*round($d/($d+$d),1)); ?>%
 </td>
 </tr>
 <tr>
 <td>Pandemonium! (PS1):</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($e/($e+$e),4)); ?>'
+width='<?php echo(100*round($e/($e+$e),1)); ?>'
 height='20'>
-<?php echo(100*round($e/($e+$e),4)); ?>%
+<?php echo(100*round($e/($e+$e),1)); ?>%
 </td>
 </tr>
 <tr>
 <td>The Sims (PS2):</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($f/($f+$f),5)); ?>'
+width='<?php echo(100*round($f/($f+$f),1)); ?>'
 height='20'>
-<?php echo(100*round($f/($f+$f),5)); ?>%
+<?php echo(100*round($f/($f+$f),1)); ?>%
 </td>
 </tr>
 <tr>
 <td>Hitman: Codename 47 (PC):</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($g/($g+$g),6)); ?>'
+width='<?php echo(100*round($g/($g+$g),1)); ?>'
 height='20'>
-<?php echo(100*round($g/($g+$g),6)); ?>%
+<?php echo(100*round($g/($g+$g),1)); ?>%
 </td>
 </tr>
 <tr>
 <td>Dog's Life:</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($h/($h+$h),7)); ?>'
+width='<?php echo(100*round($h/($h+$h),1)); ?>'
 height='20'>
-<?php echo(100*round($h/($h+$h),7)); ?>%
+<?php echo(100*round($h/($h+$h),1)); ?>%
 </td>
 </tr>
 <tr>
 <td>The Godfather: The Video Game (PS2):</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($i/($i+$i),8)); ?>'
+width='<?php echo(100*round($i/($i+$i),1)); ?>'
 height='20'>
-<?php echo(100*round($i/($i+$i),8)); ?>%
+<?php echo(100*round($i/($i+$i),1)); ?>%
 </td>
 </tr>
 <tr>
 <td>Zone of the Enders (PS2):</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($j/($j+$j),9)); ?>'
+width='<?php echo(100*round($j/($j+$j),1)); ?>'
 height='20'>
-<?php echo(100*round($j/($j+$j),9)); ?>%
+<?php echo(100*round($j/($j+$j),1)); ?>%
 </td>
 </tr>
 <tr>
 <td>Thief (Remake):</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($k/($k+$k),10)); ?>'
+width='<?php echo(100*round($k/($k+$k),1)); ?>'
 height='20'>
-<?php echo(100*round($k/($k+$k),10)); ?>%
+<?php echo(100*round($k/($k+$k),1)); ?>%
 </td>
 </tr>
 <tr>
 <td>Dishonored:</td>
 <td><img src="polls/example/poll.png"
-width='<?php echo(100*round($l/($l+$l),11)); ?>'
+width='<?php echo(100*round($l/($l+$l),1)); ?>'
 height='20'>
-<?php echo(100*round($l/($l+$l),11)); ?>%
+<?php echo(100*round($l/($l+$l),1)); ?>%
 </td>
 </tr>
 </table>
